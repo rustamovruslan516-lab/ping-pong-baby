@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+  <defs>
+    <linearGradient id="pinkGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB6D9"/>
+      <stop offset="50%" stop-color="#FF6B9D"/>
+      <stop offset="100%" stop-color="#D44E85"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A0E8E0"/>
+      <stop offset="50%" stop-color="#4ECDC4"/>
+      <stop offset="100%" stop-color="#2E9E96"/>
+    </linearGradient>
+    <radialGradient id="ballGrad" cx="35%" cy="35%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#FFB6C1"/>
+      <stop offset="100%" stop-color="#FF69B4"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Yulduzlar -->
+  <polygon points="50,40 52,48 60,48 54,53 56,61 50,56 44,61 46,53 40,48 48,48" fill="#FFD700"/>
+  <polygon points="350,30 352,38 360,38 354,43 356,51 350,46 344,51 346,43 340,38 348,38" fill="#FFD700"/>
+
+  <!-- Yurakchalar -->
+  <path d="M 80 180 C 80 175, 88 175, 88 180 C 88 175, 96 175, 96 180 C 96 187, 88 195, 88 195 C 88 195, 80 187, 80 180 Z" fill="#FF69B4"/>
+  <path d="M 310 175 C 310 170, 318 170, 318 175 C 318 170, 326 170, 326 175 C 326 182, 318 190, 318 190 C 318 190, 310 182, 310 175 Z" fill="#4ECDC4"/>
+
+  <!-- Chap raketka (pushti) -->
+  <g>
+    <rect x="62" y="150" width="20" height="45" rx="10" fill="#FFB6C1" stroke="#D44E85" stroke-width="2"/>
+    <ellipse cx="72" cy="105" rx="34" ry="44" fill="url(#pinkGrad)" stroke="#D44E85" stroke-width="2.5" filter="url(#glow)"/>
+    <circle cx="61" cy="95" r="7" fill="white"/>
+    <circle cx="83" cy="95" r="7" fill="white"/>
+    <circle cx="63" cy="97" r="3.5" fill="#2d1b3d"/>
+    <circle cx="85" cy="97" r="3.5" fill="#2d1b3d"/>
+    <circle cx="62" cy="95" r="1.5" fill="white"/>
+    <circle cx="84" cy="95" r="1.5" fill="white"/>
+    <path d="M 60 115 Q 72 128 84 115" stroke="#2d1b3d" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="52" cy="115" rx="5" ry="3" fill="#FF3D7F" opacity="0.5"/>
+    <ellipse cx="92" cy="115" rx="5" ry="3" fill="#FF3D7F" opacity="0.5"/>
+  </g>
+
+  <!-- O'ng raketka (moviy) -->
+  <g>
+    <rect x="318" y="150" width="20" height="45" rx="10" fill="#A0E8E0" stroke="#2E9E96" stroke-width="2"/>
+    <ellipse cx="328" cy="105" rx="34" ry="44" fill="url(#blueGrad)" stroke="#2E9E96" stroke-width="2.5" filter="url(#glow)"/>
+    <circle cx="317" cy="95" r="7" fill="white"/>
+    <circle cx="339" cy="95" r="7" fill="white"/>
+    <circle cx="315" cy="97" r="3.5" fill="#2d1b3d"/>
+    <circle cx="337" cy="97" r="3.5" fill="#2d1b3d"/>
+    <circle cx="314" cy="95" r="1.5" fill="white"/>
+    <circle cx="336" cy="95" r="1.5" fill="white"/>
+    <path d="M 316 115 Q 328 128 340 115" stroke="#2d1b3d" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="308" cy="115" rx="5" ry="3" fill="#2EB5B0" opacity="0.5"/>
+    <ellipse cx="348" cy="115" rx="5" ry="3" fill="#2EB5B0" opacity="0.5"/>
+  </g>
+
+  <!-- To'p -->
+  <g filter="url(#glow)">
+    <circle cx="200" cy="105" r="22" fill="url(#ballGrad)" stroke="#FF69B4" stroke-width="2.5"/>
+    <circle cx="192" cy="100" r="3" fill="#2d1b3d"/>
+    <circle cx="208" cy="100" r="3" fill="#2d1b3d"/>
+    <circle cx="193" cy="99" r="1" fill="white"/>
+    <circle cx="209" cy="99" r="1" fill="white"/>
+    <path d="M 192 112 Q 200 118 208 112" stroke="#2d1b3d" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="184" cy="110" rx="3" ry="2" fill="#FF3D7F" opacity="0.4"/>
+    <ellipse cx="216" cy="110" rx="3" ry="2" fill="#FF3D7F" opacity="0.4"/>
+  </g>
+
+  <!-- Harakat chiziqlari -->
+  <g stroke="#FFD700" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <line x1="120" y1="105" x2="140" y2="105" stroke-dasharray="4,8"/>
+    <line x1="260" y1="105" x2="280" y2="105" stroke-dasharray="4,8"/>
+  </g>
+</svg>
+
