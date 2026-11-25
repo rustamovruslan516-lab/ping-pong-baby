@@ -1,0 +1,16 @@
+{
+  "name": "Cute Ping Pong O'yini",
+  "short_name": "Ping Pong",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#2d1b69",
+  "theme_color": "#FF6B9D",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
